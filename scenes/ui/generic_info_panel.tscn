@@ -1,0 +1,79 @@
+[gd_scene load_steps=2 format=3 uid="uid://bx2iqw0r5bttq"]
+
+[sub_resource type="StyleBoxFlat" id="StyleBoxFlat_8j7yf"]
+bg_color = Color(0.16918945, 0.26192474, 0.34375, 1)
+
+[node name="InfoLookup" type="Control"]
+layout_mode = 3
+anchors_preset = 15
+anchor_right = 1.0
+anchor_bottom = 1.0
+grow_horizontal = 2
+grow_vertical = 2
+
+[node name="Background" type="PanelContainer" parent="."]
+layout_mode = 1
+anchors_preset = 15
+anchor_right = 1.0
+anchor_bottom = 1.0
+grow_horizontal = 2
+grow_vertical = 2
+theme_override_styles/panel = SubResource("StyleBoxFlat_8j7yf")
+
+[node name="DetailsMargin" type="MarginContainer" parent="Background"]
+layout_mode = 2
+theme_override_constants/margin_left = 25
+theme_override_constants/margin_top = 10
+theme_override_constants/margin_right = 10
+
+[node name="Details" type="VBoxContainer" parent="Background/DetailsMargin"]
+layout_mode = 2
+
+[node name="TitleBar" type="HBoxContainer" parent="Background/DetailsMargin/Details"]
+layout_mode = 2
+
+[node name="Title" type="RichTextLabel" parent="Background/DetailsMargin/Details/TitleBar"]
+custom_minimum_size = Vector2(200, 100)
+layout_mode = 2
+size_flags_horizontal = 3
+theme_override_colors/default_color = Color(1, 1, 1, 1)
+theme_override_font_sizes/normal_font_size = 40
+text = "Example Item Name"
+scroll_active = false
+vertical_alignment = 1
+
+[node name="ExitDetailsButton" type="Button" parent="Background/DetailsMargin/Details/TitleBar"]
+visible = false
+custom_minimum_size = Vector2(125, 60)
+layout_mode = 2
+size_flags_horizontal = 8
+size_flags_vertical = 0
+theme_override_font_sizes/font_size = 24
+text = "Exit"
+
+[node name="BodyMargin" type="MarginContainer" parent="Background/DetailsMargin/Details"]
+layout_mode = 2
+size_flags_vertical = 3
+theme_override_constants/margin_left = 25
+theme_override_constants/margin_top = 25
+theme_override_constants/margin_right = 50
+theme_override_constants/margin_bottom = 50
+
+[node name="ScrollContainer" type="ScrollContainer" parent="Background/DetailsMargin/Details/BodyMargin"]
+layout_mode = 2
+
+[node name="Body" type="RichTextLabel" parent="Background/DetailsMargin/Details/BodyMargin/ScrollContainer"]
+layout_mode = 2
+size_flags_horizontal = 3
+size_flags_vertical = 3
+theme_override_font_sizes/normal_font_size = 25
+bbcode_enabled = true
+text = "[color=yellow]Quality Level[/color]: 100
+[color=yellow]Attack[/color]: 1.5
+[color=yellow]Recharge[/color]: 1.5
+[color=yellow]Slot[/color]: Right hand, Left hand
+[color=yellow]Effects[/color]:
+	Critical Increase [color=green]+15[/color]
+	Combat Stasis Impairment [color=red]-200[/color]
+
+[color=yellow]Desciption[/color]: Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum."

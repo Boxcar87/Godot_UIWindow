@@ -1,0 +1,15 @@
+[gd_scene load_steps=3 format=3 uid="uid://r5smltabfjf5"]
+
+[ext_resource type="Script" uid="uid://b51gnpj1jdciu" path="res://scripts/UIWindowController.cs" id="1_g7g4h"]
+
+[sub_resource type="StyleBoxFlat" id="StyleBoxFlat_a5oyu"]
+bg_color = Color(0.8088947, 0.52989954, 0.22308213, 1)
+
+[node name="Node2D" type="Node2D"]
+script = ExtResource("1_g7g4h")
+
+[node name="Background" type="Panel" parent="."]
+custom_minimum_size = Vector2(500, 500)
+offset_right = 40.0
+offset_bottom = 40.0
+theme_override_styles/panel = SubResource("StyleBoxFlat_a5oyu")
