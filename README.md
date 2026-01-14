@@ -1,4 +1,6 @@
-<img width="896" height="646" alt="{151D0D1A-DA0F-415C-A81D-6EA34DBE46DC}" src="https://github.com/user-attachments/assets/fc51a7f7-4047-4487-a28d-4f7ebde1bb2f" />
+
+<img width="809" height="641" alt="{FAF7DE96-9C4E-4798-A303-CA9B8BEA041F}" src="https://github.com/user-attachments/assets/837832e9-f884-401a-8d90-8b3dc24796ef" />
+
 
 This class handles stricly the parent window that content snaps into. I have included 2 rudimentary ui elements as placeholders.
 
