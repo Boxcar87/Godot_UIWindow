@@ -28,7 +28,7 @@ public partial class WindowFixedSettings
 	public string ContentsPrefabPath; // path to PackedScene in project
 }
 
-// Add new windows Here, in Enum, and in _Ready of UIWindowController
+// Add new windows in UISettings, Enum WindowType, and _Ready of UIWindowController
 public partial class UISettings
 {
 	public WindowSavedSettings GenericInfoWindow {get; set;}
@@ -39,7 +39,6 @@ public partial class UIWindowController : Node
 {   
 	static UIWindow ActiveWindow;
 	static List<UIWindow> ActiveWindows = [];
-	static UIWindow InfoSearchWindow;
 	static UIWindow InfoWindow;
 	static UIWindow TestWindow;
 	
@@ -90,7 +89,7 @@ public partial class UIWindowController : Node
 		TestWindow = new UIWindow(TestWindowSettings, this, screenSize, RemoveWindow, SetActiveWindow, ControlInput);
 	}
 	
-	// Not a great way to handle inputs, works well enough for demo. This method only accepts commands while scene is the active window
+	// Not a great way to handle inputs, works well enough for demo. This method only accepts commands while scene is the focused window
 	public override void _Input(InputEvent _event)
 	{
 		
