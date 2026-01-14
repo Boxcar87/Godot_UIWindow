@@ -11,8 +11,7 @@ Open test_scene or build with test_scene as main scene
 
 Due to hastiness of demo conversion the key inputs will only work if the scene background is "focused". It is much more preferable to use Input functionality in Godot.
 
-Settings will persist in AppData/Local/ExampleGame/UISettings.json
-
 UIWindow class contains the meat of the functionality and UIWindowController handles population
 
 You can specify transparency, if it should be resizable, default sizing and position, and if it should prevent UI input (functionality not included in demo)
+Position and size settings updated by player will persist in AppData/Local/ExampleGame/UISettings.json
