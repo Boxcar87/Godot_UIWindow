@@ -2,7 +2,7 @@
 <img width="809" height="641" alt="{FAF7DE96-9C4E-4798-A303-CA9B8BEA041F}" src="https://github.com/user-attachments/assets/837832e9-f884-401a-8d90-8b3dc24796ef" />
 
 
-This class handles stricly the parent window that content snaps into. I have included 2 rudimentary ui elements as placeholders.
+This class handles only the parent window that content snaps into. I have included 2 rudimentary ui elements as placeholders.
 
 Import files into a Godot project (v4.5) (clone or download from packed godot project in releases)
 Open test_scene or build with test_scene as main scene
