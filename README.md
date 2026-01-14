@@ -1,4 +1,4 @@
-Import files into a Godot project (v4.5)
+Import files into a Godot project (v4.5) (clone or download from packed godot project in releases)
 Open test_scene or build with test_scene as main scene
 
 "T" and "R" keys open windows
